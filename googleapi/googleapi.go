@@ -10,6 +10,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	jsoniter "github.com/json-iterator/go"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -193,7 +194,7 @@ func (wrap MarshalStyle) JSONReader(v interface{}) (io.Reader, error) {
 	if wrap {
 		buf.Write([]byte(`{"data": `))
 	}
-	err := json.NewEncoder(buf).Encode(v)
+	err := jsoniter.NewEncoder(buf).Encode(v)
 	if err != nil {
 		return nil, err
 	}
