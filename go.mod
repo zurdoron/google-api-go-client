@@ -8,6 +8,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/googleapis/enterprise-certificate-proxy v0.1.0
 	github.com/googleapis/gax-go/v2 v2.4.0
+	github.com/json-iterator/go v1.1.12
 	go.opencensus.io v0.23.0
 	golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e
 	golang.org/x/oauth2 v0.0.0-20220822191816-0ebed06d0094
